@@ -1,0 +1,67 @@
+#travaux .textOrange {
+    color: #F86818;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+#travaux .description {
+    text-align: start;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    margin-bottom: 30px !important;
+}
+
+#travaux #aLink {
+    text-align: left !important;
+}
+
+#travaux a,
+#travaux #title {
+    text-align: left;
+    margin-bottom: 20px;
+    /* display: none!important; */
+}
+
+#travaux #headerImg {
+    border: 6px solid #F86818;
+}
+
+#travaux .nousSommesDescription {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.ourMission{
+    text-align: left!important;
+}
+
+@media screen and (max-width:1000px) {
+    #travaux br {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width:767px) {
+    #travaux .nousSommesDescription br{
+        display: none!important;
+    }
+    #travaux a,
+    #travaux #title,
+    #travaux .textOrange,
+    #travaux .description {
+        text-align: center;
+    }
+
+    #travaux #aLink {
+        text-align: center !important;
+    }
+}
