@@ -123,6 +123,7 @@ const Realisations = [
 
 const allPosts = [
     {
+        id:1,
         PostVertical: {
             imgUrl: "img/home-page/post1-resized.png",
             date: "20 juin 2023",
@@ -354,7 +355,7 @@ export default function Index() {
                         <div className="row ">
                             <div className="col-md-12">
                                 <div className="tab-content" id="nav-tabContent">
-                                    <div className="tab-pane fade show active" id="nav-methode" role="tabpanel" aria-labelledby="nav-methode-tab" tabindex="0">
+                                    <div className="tab-pane fade show active" id="nav-methode" role="tabpanel" aria-labelledby="nav-methode-tab" tabIndex="0">
                                         {/* TABE METHODE'S CONTENT */}
                                         <div id="carouselExampleControls" className="carousel slide px-0 mx-0" data-bs-ride="carousel">
                                             <div className="carousel-inner px-0 mx-0">
@@ -386,19 +387,19 @@ export default function Index() {
                                                     </div>
                                                 </div>
 
-                                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                    <span class="visually-hidden">Previous</span>
+                                                <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                    <span className="visually-hidden">Previous</span>
                                                 </button>
-                                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                    <span class="visually-hidden">Next</span>
+                                                <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                                                    <span className="visually-hidden">Next</span>
                                                 </button>
 
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="tab-pane fade" id="nav-valeurs" role="tabpanel" aria-labelledby="nav-valeurs-tab" tabindex="0">
+                                    <div className="tab-pane fade" id="nav-valeurs" role="tabpanel" aria-labelledby="nav-valeurs-tab" tabIndex="0">
                                         {/* TABE VALUE'S CONTENT */}
                                         <div id="carouselExampleIndicators" className="carousel slide px-0 mx-0" data-bs-ride="true">
                                             <div className="carousel-inner px-0 mx-0">
@@ -430,13 +431,13 @@ export default function Index() {
                                                     </div>
                                                 </div>
 
-                                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                    <span class="visually-hidden">Previous</span>
+                                                <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                    <span className="visually-hidden">Previous</span>
                                                 </button>
-                                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                    <span class="visually-hidden">Next</span>
+                                                <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                                                    <span className="visually-hidden">Next</span>
                                                 </button>
 
                                             </div>
@@ -469,7 +470,7 @@ export default function Index() {
                                 allPosts.map((post) => {
                                     return (
                                         <PostsComponent
-                                            key={post.index}
+                                            key={post.id}
                                             {...post}
                                         >
                                         </PostsComponent>
